@@ -3,7 +3,7 @@
  * @param {number} comboLength
  * @return {*[]}
  */
-export default function combineWithoutRepetitions(comboOptions, comboLength) {
+export default function combineWithoutRepetitions(comboOptions, comboLength = comboOptions.length) {
   // If the length of the combination is 1 then each element of the original array
   // is a combination itself.
   if (comboLength === 1) {
